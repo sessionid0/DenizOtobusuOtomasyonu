@@ -1,0 +1,343 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BF7EEB12-9D6C-4DCD-A82C-6B277444AA31}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HadoTestApp</RootNamespace>
+    <AssemblyName>HadoTestApp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountDeletion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountDeletion.Designer.cs">
+      <DependentUpon>AccountDeletion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bakiye.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bakiye.Designer.cs">
+      <DependentUpon>Bakiye.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dotobusbaseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dotobusbaseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FizikselKartBakiye.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FizikselKartBakiye.Designer.cs">
+      <DependentUpon>FizikselKartBakiye.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FizikselKartEkleAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FizikselKartEkleAdmin.Designer.cs">
+      <DependentUpon>FizikselKartEkleAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FizikselKartGoruntule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FizikselKartGoruntule.Designer.cs">
+      <DependentUpon>FizikselKartGoruntule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSifreUnuttum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSifreUnuttum.Designer.cs">
+      <DependentUpon>FormSifreUnuttum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormYeniKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormYeniKayit.Designer.cs">
+      <DependentUpon>FormYeniKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HadoPanelAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HadoPanelAdmin.Designer.cs">
+      <DependentUpon>HadoPanelAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HadoPanelUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HadoPanelUser.Designer.cs">
+      <DependentUpon>HadoPanelUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HesKod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HesKod.Designer.cs">
+      <DependentUpon>HesKod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciIslemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciIslemleri.Designer.cs">
+      <DependentUpon>KullaniciIslemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SanalKartIslemYonetici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SanalKartIslemYonetici.Designer.cs">
+      <DependentUpon>SanalKartIslemYonetici.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SanalKartOlusturGoruntule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SanalKartOlusturGoruntule.Designer.cs">
+      <DependentUpon>SanalKartOlusturGoruntule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SanalKartIslemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SanalKartIslemleri.Designer.cs">
+      <DependentUpon>SanalKartIslemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SeferBilgileri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeferBilgileri.Designer.cs">
+      <DependentUpon>SeferBilgileri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SeferEkleSilAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeferEkleSilAdmin.Designer.cs">
+      <DependentUpon>SeferEkleSilAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SifreDegisikligi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SifreDegisikligi.Designer.cs">
+      <DependentUpon>SifreDegisikligi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uyeler0.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Uyeler0.Designer.cs">
+      <DependentUpon>Uyeler0.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Veritabani.cs" />
+    <Compile Include="YoneticiHesapSilme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YoneticiHesapSilme.Designer.cs">
+      <DependentUpon>YoneticiHesapSilme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YoneticiSifreDegistir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YoneticiSifreDegistir.Designer.cs">
+      <DependentUpon>YoneticiSifreDegistir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YoneticiSifreIslemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YoneticiSifreIslemleri.Designer.cs">
+      <DependentUpon>YoneticiSifreIslemleri.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AccountDeletion.resx">
+      <DependentUpon>AccountDeletion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bakiye.resx">
+      <DependentUpon>Bakiye.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FizikselKartBakiye.resx">
+      <DependentUpon>FizikselKartBakiye.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FizikselKartEkleAdmin.resx">
+      <DependentUpon>FizikselKartEkleAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FizikselKartGoruntule.resx">
+      <DependentUpon>FizikselKartGoruntule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSifreUnuttum.resx">
+      <DependentUpon>FormSifreUnuttum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormYeniKayit.resx">
+      <DependentUpon>FormYeniKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HadoPanelAdmin.resx">
+      <DependentUpon>HadoPanelAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HadoPanelUser.resx">
+      <DependentUpon>HadoPanelUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HesKod.resx">
+      <DependentUpon>HesKod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciIslemleri.resx">
+      <DependentUpon>KullaniciIslemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SanalKartIslemYonetici.resx">
+      <DependentUpon>SanalKartIslemYonetici.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SanalKartOlusturGoruntule.resx">
+      <DependentUpon>SanalKartOlusturGoruntule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SanalKartIslemleri.resx">
+      <DependentUpon>SanalKartIslemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeferBilgileri.resx">
+      <DependentUpon>SeferBilgileri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeferEkleSilAdmin.resx">
+      <DependentUpon>SeferEkleSilAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SifreDegisikligi.resx">
+      <DependentUpon>SifreDegisikligi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uyeler0.resx">
+      <DependentUpon>Uyeler0.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YoneticiHesapSilme.resx">
+      <DependentUpon>YoneticiHesapSilme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YoneticiSifreDegistir.resx">
+      <DependentUpon>YoneticiSifreDegistir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YoneticiSifreIslemleri.resx">
+      <DependentUpon>YoneticiSifreIslemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="dotobusbaseDataSet.xsc">
+      <DependentUpon>dotobusbaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="dotobusbaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dotobusbaseDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dotobusbaseDataSet.xss">
+      <DependentUpon>dotobusbaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dotobus %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dotobus %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DOTOBUS %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DOTOBUS %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DOTOBUS %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DOTOBUS %286%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DOTOBUS %287%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DOTOBUS %288%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DOTOBUS %289%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DOTOBUS %2811%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DOTOBUS %2813%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DOTOBUS %2812%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Bitmap1.bmp" />
+    <Content Include="Resources\DOTOBUS %2814%29.png" />
+    <None Include="Resources\DOTOBUS %2821%29.png" />
+    <None Include="Resources\DOTOBUS %2820%29.png" />
+    <None Include="Resources\DOTOBUS %286%291.png" />
+    <None Include="Resources\DOTOBUS %288%291.png" />
+    <None Include="Resources\DOTOBUS %2819%29.png" />
+    <None Include="Resources\DOTOBUS %2818%29.png" />
+    <None Include="Resources\DOTOBUS %2817%29.png" />
+    <None Include="Resources\DOTOBUS %2816%29.png" />
+    <None Include="Resources\DOTOBUS %2815%29.png" />
+    <None Include="Resources\DOTOBUS %2814%291.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
